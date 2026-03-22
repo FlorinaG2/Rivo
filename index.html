@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rivo Bistro Cafe | Prundu Bârgăului</title>
+  <meta name="description" content="Rivo Bistro Cafe - site premium, spectaculos, modern și diferit." />
+  <meta name="theme-color" content="#090b0f" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div class="noise"></div>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+  <div class="glow g3"></div>
+
+  <div id="intro" aria-hidden="true">
+    <div class="intro-ring"></div>
+    <div class="intro-grid" id="introGrid"></div>
+    <div class="intro-copy">
+      <span class="eyebrow">Rivo Experience</span>
+      <h1>Un loc care se construiește din lumină, textură și atmosferă.</h1>
+      <p>La prima deschidere, identitatea Rivo apare din cuburi aurii și se transformă într-o prezență memorabilă.</p>
+    </div>
+  </div>
+
+  <header id="header">
+    <div class="nav">
+      <a href="#home" class="brand">
+        <img src="Final.png" alt="Rivo Bistro Cafe" />
+        <div class="brand-text">
+          <strong>Rivo Bistro Cafe</strong>
+          <span>Prundu Bârgăului</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Deschide meniul" type="button">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#concept">Atmosferă</a>
+        <a href="#signature">Signature</a>
+        <a href="#menu">Meniu</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#panorama">360</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img src="Imagine2.jpeg" alt="Interior Rivo Bistro Cafe" />
+        <img src="Imagine1.jpeg" alt="Interior lounge Rivo" class="second" />
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-grid">
+        <div class="hero-card reveal">
+          <span class="hero-badge">Luxury • Bistro • Cafe • Signature Comfort Food</span>
+          <h1 class="hero-title">
+            Rivo
+            <span class="gold">Bistro Cafe</span>
+          </h1>
+          <p class="hero-lead">
+            Un spațiu contemporan cu identitate premium, verde catifelat, lumină sculpturală și un meniu care combină
+            piadine generoase, burgeri puternici, crispy, salate fresh și deserturi care rămân în minte.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-gold">Vezi meniul</a>
+            <a href="#panorama" class="btn btn-ghost">Explorează spațiul</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>Design premium</strong>
+              <span>Verde intens, lemn elegant, reflexii aurii și atmosferă lounge.</span>
+            </div>
+            <div class="stat">
+              <strong>Meniu urban</strong>
+              <span>Piadina, burger, crispy, salate, sosuri și deserturi.</span>
+            </div>
+            <div class="stat">
+              <strong>Loc memorabil</strong>
+              <span>Prundu Bârgăului, într-o experiență vizuală diferită și spectaculoasă.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-side reveal">
+          <div class="floating-panel large tilt">
+            <img src="Imagine2.jpeg" alt="Interior principal Rivo" />
+            <div class="panel-copy">
+              <span class="tag">Interior</span>
+              <h3>Statement vizual</h3>
+              <p>Corpuri suspendate cu vegetație, reflexii premium și o prezență elegantă încă de la intrare.</p>
+            </div>
+          </div>
+
+          <div class="floating-panel tilt">
+            <img src="Imagine1.jpeg" alt="Zona lounge Rivo" />
+            <div class="panel-copy">
+              <span class="tag">Lounge mood</span>
+              <h3>Relaxat, dar sofisticat</h3>
+              <p>Perfect pentru ieșiri cu prietenii, seri lejere sau un loc care impresionează instant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+    </section>
+
+    <section class="section" id="concept">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Atmosferă</span>
+          <h2>Lux discret, identitate puternică, senzație de lounge modern.</h2>
+          <p>
+            Rivo nu este doar un loc în care vii să mănânci. Este un decor cu personalitate: logo aurit, texturi mate,
+            accente calde, verde sofisticat și o compoziție care face spațiul să pară exclusivist și memorabil.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="glass reveal tilt">
+            <div class="index">01</div>
+            <h3>Identitate premium</h3>
+            <p>Semnătura vizuală aurie și montană transmite rafinament, căldură și memorabilitate.</p>
+          </article>
+          <article class="glass reveal tilt">
+            <div class="index">02</div>
+            <h3>Interior instagramabil</h3>
+            <p>Vegetal suspendat, geometrii curate și suprafețe glossy care captează instant privirea.</p>
+          </article>
+          <article class="glass reveal tilt">
+            <div class="index">03</div>
+            <h3>Gust direct și modern</h3>
+            <p>Preparatele sunt populare, clare, bine construite și perfect aliniate unui brand urban-premium.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="signature">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Signature Selection</span>
+          <h2>Preparatele care definesc spiritul Rivo.</h2>
+          <p>Selecții prezentate într-un mod cinematografic, pentru un impact vizual cât mai puternic.</p>
+        </div>
+
+        <div class="signature-grid">
+          <article class="signature big reveal tilt">
+            <img src="Imagine2.jpeg" alt="Rivo interior premium" />
+            <div class="copy">
+              <span class="tag">Best seller</span>
+              <h3>Piadina Rustic</h3>
+              <p>Lipie, maioneză, ketchup, cremă de brânză, mozzarella, piept de pui, kaizer, rucola și roșii.</p>
+              <strong>31 RON</strong>
+            </div>
+          </article>
+
+          <article class="signature reveal tilt">
+            <img src="Imagine1.jpeg" alt="Rivo burger atmosphere" />
+            <div class="copy">
+              <span class="tag">Burger icon</span>
+              <h3>Cheese Burger</h3>
+              <p>Vită, cheddar, ceapă caramelizată, sos burger și sos cheddar.</p>
+            </div>
+          </article>
+
+          <article class="signature reveal tilt">
+            <img src="Imagine2.jpeg" alt="Rivo fresh" />
+            <div class="copy">
+              <span class="tag">Fresh choice</span>
+              <h3>Salată Rivo</h3>
+              <p>Mix salată, porumb, roșii, castraveți, mozzarella și pui crispy.</p>
+            </div>
+          </article>
+
+          <article class="signature reveal tilt">
+            <img src="Imagine1.jpeg" alt="Rivo dessert" />
+            <div class="copy">
+              <span class="tag">Dessert mood</span>
+              <h3>Lava Cake</h3>
+              <p>Desert intens, cald, servit cu înghețată de vanilie.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Meniu</span>
+          <h2>Elegant, interactiv și ușor de parcurs.</h2>
+          <p>Filtrează categoriile și apasă pe orice preparat pentru detalii.</p>
+        </div>
+
+        <div class="menu-toolbar reveal">
+          <div class="filters" id="filters"></div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <input id="searchInput" type="search" placeholder="Caută un preparat..." />
+          </label>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Galerie</span>
+          <h2>Interiorul ca statement vizual.</h2>
+          <p>Imagini mari, lumină cinematică și un lightbox elegant pentru o prezentare premium.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item tall reveal tilt" data-lightbox="Imagine1.jpeg">
+            <img src="Imagine1.jpeg" alt="Zona lounge Rivo Bistro Cafe" />
+            <figcaption class="gallery-caption">
+              <h3>Colț lounge premium</h3>
+              <p>Reflexii lucioase, verde catifelat și o prezență foarte elegantă.</p>
+            </figcaption>
+          </figure>
+
+          <div class="gallery-side">
+            <figure class="gallery-item reveal tilt" data-lightbox="Imagine2.jpeg">
+              <img src="Imagine2.jpeg" alt="Mese și corpuri suspendate cu vegetație" />
+              <figcaption class="gallery-caption">
+                <h3>Geometrie și lumină</h3>
+                <p>Plante suspendate, ritm vizual și atmosferă premium.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item reveal tilt" data-lightbox="Final.png">
+              <img src="Final.png" alt="Logo Rivo Bistro Cafe" style="object-fit:contain;background:#0b0e12;padding:26px;" />
+              <figcaption class="gallery-caption">
+                <h3>Semnătură aurie</h3>
+                <p>Un logo care arată exclusivist și poziționează brandul sus din prima secundă.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="panorama">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Tur 360 real</span>
+          <h2>Explorează Rivo din interior, într-un viewer panoramic premium.</h2>
+          <p>Turul este extras direct din arhiva ta și integrat în site, cu mișcare fluidă, auto-rotate și fullscreen.</p>
+        </div>
+
+        <div class="rivo360-shell reveal">
+          <div class="rivo360-top">
+            <div class="rivo360-copy">
+              <strong>Rivo Immersive View</strong>
+              <span>3 puncte panoramice • drag pentru rotire • scroll pentru zoom</span>
+            </div>
+
+            <div class="rivo360-controls">
+              <button class="rivo360-scene active" data-scene="lounge" type="button">Lounge</button>
+              <button class="rivo360-scene" data-scene="main" type="button">Sala principală</button>
+              <button class="rivo360-scene" data-scene="entry" type="button">Intrare / Bar</button>
+              <button class="rivo360-mini active" id="toggleAutoRotate" type="button">Auto</button>
+              <button class="rivo360-mini" id="rivo360Fullscreen" type="button">Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="rivo360-stage" id="rivo360Stage">
+            <div id="rivo360Canvas"></div>
+            <div class="rivo360-vignette"></div>
+            <div class="rivo360-shine"></div>
+
+            <div class="rivo360-loader show" id="rivo360Loader">
+              <div class="rivo360-loader-ring"></div>
+              <span>Se încarcă turul 360…</span>
+            </div>
+
+            <div class="rivo360-hint">Drag • Scroll • Tap • Fullscreen</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Ultimul detaliu: prezență clară și elegantă.</h2>
+          <p>Mai jos ai date demo. Înlocuiește-le cu cele reale ale restaurantului.</p>
+        </div>
+
+        <div class="contact-wrap">
+          <div class="contact-card reveal">
+            <h3>Detalii restaurant</h3>
+            <div class="contact-list">
+              <div class="contact-row">
+                <strong>Adresă</strong>
+                <span>Prundu Bârgăului, Bistrița-Năsăud</span>
+              </div>
+              <div class="contact-row">
+                <strong>Telefon</strong>
+                <span>07xx xxx xxx</span>
+              </div>
+              <div class="contact-row">
+                <strong>Instagram / Facebook</strong>
+                <span>@rivo.bistro.cafe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>Program</h3>
+            <div class="contact-list">
+              <div class="contact-row">
+                <div class="hours"><strong>Luni - Joi</strong><span>09:00 - 22:00</span></div>
+              </div>
+              <div class="contact-row">
+                <div class="hours"><strong>Vineri - Sâmbătă</strong><span>09:00 - 00:00</span></div>
+              </div>
+              <div class="contact-row">
+                <div class="hours"><strong>Duminică</strong><span>10:00 - 22:00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>Rivo Bistro Cafe — Prundu Bârgăului</span>
+      <span>Site premium concept • HTML / CSS / JS</span>
+    </div>
+  </footer>
+
+  <div class="overlay" id="menuOverlay" aria-hidden="true">
+    <div class="modal">
+      <button class="close" id="closeMenuOverlay" aria-label="Închide" type="button">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="lightbox" aria-hidden="true">
+    <div class="lightbox-box">
+      <button class="close" id="closeLightbox" aria-label="Închide" type="button">✕</button>
+      <img id="lightboxImage" src="" alt="Imagine galerie" />
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
