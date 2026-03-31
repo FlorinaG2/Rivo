@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meniu Băuturi | Rivo Bistro Cafe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header id="header">
+        <div class="nav">
+          <a href="#home" class="brand">
+            <img src="Logo.png" alt="Rivo Bistro Cafe" />
+            <div class="brand-text">
+              <strong>Rivo Bistro Cafe</strong>
+              <span>Prundu Bârgăului</span>
+            </div>
+          </a>
+    
+          <button class="menu-toggle" id="menuToggle" aria-label="Deschide meniul" type="button">
+            <span></span><span></span><span></span>
+          </button>
+    
+          <nav class="nav-links" id="navLinks">
+            <a href="index.html">Acasă</a>
+            <a href="food-menu.html">Meniu Preparate</a>
+            <a href="drinks-menu.html">Meniu Băuturi</a>
+            <a href="index.html#contact" class="cta">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+  <main>
+    <section class="section" id="drinks_menu">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Meniu</span>
+          <h2>Filtrează categoriile și apasă pe orice preparat pentru detalii.</h2>
+        </div>
+
+        <div class="menu-toolbar">
+          <div class="filters" id="filters"></div>
+
+          <label class="search" for="searchInput">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+            <input id="searchInput" type="search" placeholder="Caută o băutură..." />
+          </label>
+        </div>
+
+        <div class="menu-grid" id="drinksMenuGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay" id="menuOverlay" aria-hidden="true">
+    <div class="modal">
+      <button class="close" id="closeMenuOverlay" aria-label="Închide" type="button">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="drinks-menu.js"></script>
+</body>
+</html>
