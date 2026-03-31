@@ -9,9 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightbox = document.getElementById('lightbox');
   const lightboxImage = document.getElementById('lightboxImage');
   const header = document.getElementById('header');
+  const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
   const introGrid = document.getElementById('introGrid');
 
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  }
+  
   function buildIntro() {
     const rows = 9;
     const cols = 9;
