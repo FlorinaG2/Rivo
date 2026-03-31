@@ -250,8 +250,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const menuOverlay = document.getElementById('menuOverlay');
     const modalContent = document.getElementById('modalContent');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
     const closeMenuOverlay = document.getElementById('closeMenuOverlay');
   
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
     function displayPrice(item) {
       return item.price || 'Preț în locație';
     }
