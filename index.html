@@ -41,7 +41,7 @@
         <a href="#food_menu">Meniu Preparate</a>
         <a href="#drinks_menu">Meniu Băuturi</a>
         <a href="#gallery">Galerie</a>
-        <a href="#panorama">360</a>
+        <a href="#locatie">Locație</a>
         <a href="#contact" class="cta">Contact</a>
       </nav>
     </div>
@@ -245,41 +245,27 @@
       </div>
     </section>
 
-    <section class="section" id="panorama">
+    <section class="section" id="locatie">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Tur 360 real</span>
-          <h2>Explorează Rivo din interior, într-un viewer panoramic premium.</h2>
-          <p>Turul este extras direct din arhiva ta și integrat în site, cu mișcare fluidă, auto-rotate și fullscreen.</p>
+          <span class="eyebrow">Locație</span>
         </div>
-
+    
         <div class="rivo360-shell reveal">
           <div class="rivo360-top">
             <div class="rivo360-copy">
-              <strong>Rivo Immersive View</strong>
-              <span>3 puncte panoramice • drag pentru rotire • scroll pentru zoom</span>
-            </div>
-
-            <div class="rivo360-controls">
-              <button class="rivo360-scene active" data-scene="lounge" type="button">Lounge</button>
-              <button class="rivo360-scene" data-scene="main" type="button">Sala principală</button>
-              <button class="rivo360-scene" data-scene="entry" type="button">Intrare / Bar</button>
-              <button class="rivo360-mini active" id="toggleAutoRotate" type="button">Auto</button>
-              <button class="rivo360-mini" id="rivo360Fullscreen" type="button">Fullscreen</button>
+              <strong>Locație</strong>
+              <span>Prundu Bârgăului</span>
             </div>
           </div>
-
-          <div class="rivo360-stage" id="rivo360Stage">
-            <div id="rivo360Canvas"></div>
-            <div class="rivo360-vignette"></div>
-            <div class="rivo360-shine"></div>
-
-            <div class="rivo360-loader show" id="rivo360Loader">
-              <div class="rivo360-loader-ring"></div>
-              <span>Se încarcă turul 360…</span>
-            </div>
-
-            <div class="rivo360-hint">Drag • Scroll • Tap • Fullscreen</div>
+    
+          <div class="location-map" id="locatie">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1774958341514!6m8!1m7!1snd-6VfwnU9YTR5gqa77gPQ!2m2!1d47.21958623127713!2d24.73845602491926!3f338.7785440071168!4f3.9337421620003994!5f0.7820865974627469"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
       </div>
