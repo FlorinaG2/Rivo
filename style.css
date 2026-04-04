@@ -1050,3 +1050,16 @@ video {
   fill: #d4af37;
   stroke: none;
 }
+
+footer a {
+  color: #d4af37;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.45);
+  padding-bottom: 1px;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+footer a:hover {
+  color: #f1d67a;
+  border-color: #f1d67a;
+}
