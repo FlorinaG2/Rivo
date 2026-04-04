@@ -258,6 +258,12 @@ document.addEventListener('DOMContentLoaded', () => {
       menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('open');
       });
+
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+        });
+      });
     }
     function displayPrice(item) {
       return item.price || 'Preț în locație';
