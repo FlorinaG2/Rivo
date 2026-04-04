@@ -1013,6 +1013,8 @@ video {
   gap: 14px;
   margin-top: 22px;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .social-icons a {
